@@ -1,22 +1,22 @@
 # Project Summary – Regression Analysis - Medical Insurance Cost
 
-**Author:** Branton Dawson
-**Date:** November 24, 2025  
+- **Author:** Branton Dawson
+- **Date:** November 24, 2025  
 
 ## Project Purpose
 
 This notebook demonstrates comprehensive regression modeling techniques by predicting medical insurance charges using polynomial regression and pipeline optimization. The project systematically compares Linear, Polynomial, Ridge, and Elastic Net models with continuous features to achieve 86% variance explanation in insurance cost predictions.  
 
-## Datase
+## Data source
 
-- **Source file:** [DATA](https://www.kaggle.com/datasets/mirichoi0218/insurance?resource=download)
+- **Source file:** Kaggle Medical Cost Personal Dataset - [DATA](https://www.kaggle.com/datasets/mirichoi0218/insurance?resource=download)
 - **Description:** The dataset contains 1,338 records. Each record includes:  
   - Numeric features: `age`, `bmi`, `children`  
   - Categorical features: `sex`, `smoker`, `region`  
   - Target variable: `charges` (annual insurance cost)  
 - No missing values — dataset is clean.  
 
-## Data Processing & Feature Engineerin
+## Data Processing & Feature Engineering
 
 - **Outlier Detection:** IQR method identified 139 high-cost outliers (10.4%) ranging $34,618-$63,770 and 9 BMI outliers (0.7%)
 - **Initial Exploration:** Created categorical bins (`age_group`, `bmi_category`) and binary indicators (`sex_numerical`, `smoker_status`)
