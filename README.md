@@ -4,7 +4,7 @@
 **Date:** November 24, 2025  
 **Status:** COMPLETED
 
-- NOTEBOOK LINK: [ML REGRESSION](https://github.com/bjdawson23/ml_regression_branton)
+- NOTEBOOK LINK: [ml_regression](https://github.com/bjdawson23/ml_regression_branton)
 
 **Project Overview**
 This notebook demonstrates comprehensive regression modeling techniques by predicting Titanic passenger fares using multiple algorithms and feature combinations. The project systematically compares Linear Regression, Polynomial Regression, Ridge Regression, and Elastic Net models to understand continuous target prediction challenges.
