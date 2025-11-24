@@ -6,6 +6,8 @@
 
 - NOTEBOOK LINK: [REGRESSION](https://github.com/bjdawson23/ml_regression_branton/blob/main/notebooks/regression_branton.ipynb)
 
+- PEER REVIEW LINK: [PEER_REVIEW](https://github.com/bjdawson23/ml_regression_branton/blob/main/peer_review.md)
+
 **Project Overview**
 This notebook demonstrates comprehensive regression modeling techniques by predicting medical insurance charges using polynomial regression and pipeline optimization. The project systematically compares Linear, Polynomial, Ridge, and Elastic Net models with continuous features to achieve 86% variance explanation in insurance cost predictions.
 
