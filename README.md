@@ -15,6 +15,57 @@ This notebook demonstrates comprehensive regression modeling techniques by predi
 **Source**: [Kaggle - Insurance Dataset](https://www.kaggle.com/datasets/mirichoi0218/insurance)  
 **Size**: 1,338 records with 7 features (no missing values)
 
+---
+
+## How to Execute the Notebook
+
+### Prerequisites
+- Python 3.8 or higher
+- Jupyter Notebook or VS Code with Jupyter extension
+- Required packages: pandas, numpy, matplotlib, seaborn, scikit-learn
+
+### Installation Steps
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/bjdawson23/ml_regression_branton.git
+   cd ml_regression_branton
+   ```
+
+2. **Install required packages:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Launch the notebook:**
+   - **Using Jupyter Notebook:**
+     ```bash
+     jupyter notebook notebooks/regression_branton.ipynb
+     ```
+   
+   - **Using VS Code:**
+     - Open the project folder in VS Code
+     - Navigate to `notebooks/regression_branton.ipynb`
+     - Select a Python kernel when prompted
+     - Click "Run All" or execute cells sequentially
+
+### Notebook Execution Order
+
+The notebook is structured in 6 sections and should be executed sequentially:
+
+1. **Section 1:** Data loading and initial inspection
+2. **Section 2:** Exploratory data analysis and outlier detection
+3. **Section 3:** Feature selection and engineering (continuous features)
+4. **Section 4:** Basic linear regression model training (4 case studies)
+5. **Section 5:** Pipeline implementation with polynomial transformations
+6. **Section 6:** Final findings, challenges, and recommendations
+
+**Estimated Runtime:** 2-3 minutes for complete notebook execution
+
+**Note:** The notebook uses `../data/insurance.csv` as the data path. Ensure the data file is in the correct location before running.
+
+---
+
 ## applied-ml-branton
 
 > Use this repo to start a professional Python project.
