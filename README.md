@@ -1,10 +1,10 @@
-# Project 04: ml04_branton.ipynb - Regression Analysis for Fare Prediction
+# Final Project: Regression Analysis
 
 **Author:** Branton Dawson  
 **Date:** November 24, 2025  
 **Status:** COMPLETED
 
-- NOTEBOOK LINK: [ml04_branton_notebook](https://github.com/bjdawson23/applied-ml-branton/blob/main/notebooks/project04/ml04_branton.ipynb)
+- NOTEBOOK LINK: [ML REGRESSION](https://github.com/bjdawson23/ml_regression_branton)
 
 **Project Overview**
 This notebook demonstrates comprehensive regression modeling techniques by predicting Titanic passenger fares using multiple algorithms and feature combinations. The project systematically compares Linear Regression, Polynomial Regression, Ridge Regression, and Elastic Net models to understand continuous target prediction challenges.
@@ -205,15 +205,19 @@ Each time forward progress is made, remember to git add-commit-push.
 
 ### Project Overview
 
-This notebook demonstrates comprehensive regression modeling techniques by predicting Titanic passenger fares using multiple algorithms and feature combinations. The project systematically compares Linear Regression, Polynomial Regression, Ridge Regression, and Elastic Net models to understand continuous target prediction challenges.
+Businesses and organizations often need to understand the relationships between different factors to make better decisions. For example, a company may want to predict the fuel efficiency of a car based on its weight and engine size or estimate home prices based on square footage and location. Regression analysis helps identify and quantify these relationships between numerical features, providing insights that can be used for forecasting and decision-making.
+
+This project demonstrates your ability to apply regression modeling techniques to a real-world dataset.
 
 #### Objective: Multi-Model Regression Analysis
 
-- **Dataset**: Titanic passenger data (891 passengers after cleaning)
-- **Target Variable**: `fare` (continuous - amount paid for journey)
-- **Algorithms**: Linear Regression, Polynomial Regression (degrees 3 & 6), Ridge Regression, Elastic Net
-- **Feature Cases**: Four different feature combinations tested across all models
-- **Goal**: Determine optimal model-feature combinations for fare prediction and understand regression complexity trade-offs
+    Load and explore a dataset.
+    Choose and justify features for predicting a target variable.
+    Train a regression model and evaluate performance.
+    Compare multiple regression approaches.
+    Document your work in a structured Jupyter Notebook.
+    Conduct a peer review of a classmate's project.
+
 
 #### Feature Engineering & Selection
 
