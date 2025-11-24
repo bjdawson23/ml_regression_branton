@@ -1,93 +1,92 @@
-# Heart Disease Classification Analysis - Machine Learning Project
+# Project 04: ml04_branton.ipynb - Regression Analysis for Fare Prediction
 
 **Author:** Branton Dawson  
-**Course:** Applied Machine Learning  
 **Date:** November 24, 2025  
+**Status:** COMPLETED
 
-## 📂 Project Links
+- NOTEBOOK LINK: [ml04_branton_notebook](https://github.com/bjdawson23/applied-ml-branton/blob/main/notebooks/project04/ml04_branton.ipynb)
 
-- Notebook link: [Classification Mid_term](https://github.com/bjdawson23/ml_classification_branton/blob/main/classification_analysis.ipynb)
+**Project Overview**
+This notebook demonstrates comprehensive regression modeling techniques by predicting Titanic passenger fares using multiple algorithms and feature combinations. The project systematically compares Linear Regression, Polynomial Regression, Ridge Regression, and Elastic Net models to understand continuous target prediction challenges.
 
-- Peer Review: [Peer_Review](https://github.com/bjdawson23/ml_classification_branton/blob/main/peer_review.md)
+## applied-ml-branton
 
-## 🎯 Project Overview
+> Use this repo to start a professional Python project.
 
-This repository contains a comprehensive machine learning analysis for predicting heart disease presence using the UCI Heart Disease Dataset. The project demonstrates professional data science methodologies by comparing multiple classification algorithms across different feature engineering approaches.
+- Additional instructions: See the [pro-analytics-02](https://denisecase.github.io/pro-analytics-02/) guide.
+- Project organization: [STRUCTURE](./STRUCTURE.md)
+- Build professional skills:
+  - **Environment Management**: Every project in isolation
+  - **Code Quality**: Automated checks for fewer bugs
+  - **Documentation**: Use modern project documentation tools
+  - **Testing**: Prove your code works
+  - **Version Control**: Collaborate professionally
 
-## 📊 Dataset & Objective
+---
 
-- **Dataset:** UCI Heart Disease Dataset (303 patient records, 14 clinical features)
-- **Target:** Binary classification - Heart disease presence (0 = No, 1 = Yes)  
-- **Algorithms Compared:** Decision Tree Classifier, Support Vector Machine (SVM), Neural Network (MLP)
-- **Feature Cases:** Age groups, cholesterol levels, and maximum heart rate (thalach)
+## About this Repository
 
-## 🏆 Key Results Summary
+Starter files for the example labs:
 
-| Algorithm | Best Feature | Accuracy | Key Insight |
-|-----------|--------------|----------|-------------|
-| **SVM (Winner)** | thalach | **68.3%** | Superior with continuous physiological data |
-| Decision Tree | age_group | 63.3% | Most interpretable, consistent across features |  
-| SVM | age_group | 63.3% | Tied performance on categorical data |
-| Decision Tree | chol_level | 60.0% | Cholesterol alone insufficient for prediction |
+- notebooks/example01 folder
+- notebooks/example02 folder
 
-### 💡 Clinical Insights
-- **Maximum heart rate (thalach)** emerged as the most predictive single feature
-- **Age remains fundamental** - consistently strong across all modeling approaches
-- **Algorithm choice matters** - SVM excels with continuous features, Decision Trees with categorical
-- **Feature engineering impact** - Proper binning and categorization significantly affects model performance
+## Folders for Projects
 
-## 🚀 Quick Start Guide
+Each project will be completed in its own folder.
 
-### Prerequisites
-- Python 3.11+ installed on your system
-- Git for version control
-- VS Code with Python extension (recommended)
+- notebooks/project01 folder:
+  - ml01.ipynb - COMPLETE THIS
+  - ml01.py - working script with just the code
+  - README.md - instructions - modify this to present your lab project
 
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/bjdawson23/ml_classification_branton.git
-cd ml_classification_branton
-```
+- notebooks/project02 folder:
+  - ml01_branton.ipynb - **COMPLETED** - Comprehensive data analysis project
+  - README.md - project documentation and analysis summary
 
-### 2️⃣ Set Up Virtual Environment
+- notebooks/project03 folder:
+  - ml03_branton.ipynb - **COMPLETED** - Classification model comparison project
+  - README.md - project documentation and performance analysis
 
-**Option A: Using uv (Recommended)**
-```bash
+---
+
+## WORKFLOW 1. Set Up Machine
+
+Proper setup is critical.
+Complete each step in the following guide and verify carefully.
+
+- [SET UP MACHINE](./SET_UP_MACHINE.md)
+
+---
+
+## WORKFLOW 2. Set Up Project
+
+After verifying your machine is set up, set up a new Python project by copying this template.
+Complete each step in the following guide.
+
+- [SET UP PROJECT](./SET_UP_PROJECT.md)
+
+It includes the critical commands to set up your local environment (and activate it):
+
+```shell
 uv venv
 uv python pin 3.12
 uv sync --extra dev --extra docs --upgrade
+uv run pre-commit install
+uv run python --version
 ```
-
-**Option B: Using standard Python**
-```bash
-python -m venv .venv
-```
-
-### 3️⃣ Activate Virtual Environment
 
 **Windows (PowerShell):**
-```powershell
+
+```shell
 .\.venv\Scripts\activate
 ```
 
-### 4️⃣ Install Required Packages
-```bash
-pip install -r requirements.txt
+**macOS / Linux / WSL:**
+
+```shell
+source .venv/bin/activate
 ```
-
-Required packages:
-- `pandas` - Data manipulation and analysis
-- `numpy` - Numerical computing  
-- `scikit-learn` - Machine learning algorithms
-- `matplotlib` - Data visualization
-- `seaborn` - Statistical data visualization
-
-### 5️⃣ Launch Jupyter Notebook
-```bash
-jupyter notebook
-```
-
-Navigate to `notebooks/ml_classification_branton/ml_classification_branton.ipynb` to run the analysis.
 
 ---
 
@@ -172,65 +171,9 @@ If this works, your project is ready! If not, check:
 - Did you run the full `uv sync --extra dev --extra docs --upgrade` command?
 - Are there any error messages? (ask for help with the exact error)
 
-## 📚 Project Structure
+## Update this README as you work
 
-```
-ml_classification_branton/
-├── README.md                           # This file - project overview and setup
-├── requirements.txt                    # Python package dependencies  
-├── peer_review.md                     # Peer review documentation
-├── notebooks/
-│   └── ml_classification_branton/
-│       ├── ml_classification_branton.ipynb  # Main analysis notebook
-│       └── data/
-│           └── heart_disease_data.csv      # UCI Heart Disease dataset
-└── .venv/                             # Virtual environment (created during setup)
-```
-
-## 🔬 Technical Methodology
-
-### Data Preprocessing Pipeline
-1. **Missing Value Handling**: Dropped 6 rows with NaN values (minimal 2% loss)
-2. **Target Engineering**: Converted multi-class target (0,1,2,3,4) to binary classification
-3. **Feature Engineering**: Created age groups and cholesterol risk categories
-4. **Data Splitting**: Stratified train/test split (80/20) maintaining class balance
-
-### Model Evaluation Framework
-- **Algorithms**: Decision Tree, Support Vector Machine (RBF kernel), Neural Network (MLP)
-- **Metrics**: Accuracy, Precision, Recall, F1-Score, Classification Report
-- **Validation**: Stratified sampling with different random states for robust comparison
-- **Visualization**: Decision trees, confusion matrices, performance comparisons
-
-## 🎓 Learning Outcomes
-
-### Technical Skills Demonstrated
-- **Data Wrangling**: Pandas-based data cleaning and transformation
-- **Feature Engineering**: Medical domain-aware feature creation and binning
-- **Model Selection**: Systematic algorithm comparison with proper evaluation
-- **Visualization**: Professional matplotlib/seaborn plotting for insights
-- **Performance Analysis**: Multi-metric evaluation beyond simple accuracy
-
-### Machine Learning Concepts Applied
-- **Classification Theory**: Binary prediction with medical significance
-- **Algorithm Comparison**: Understanding when different models excel
-- **Feature Selection**: Impact of different predictors on model performance
-- **Overfitting Detection**: Training vs test performance analysis
-- **Clinical Interpretation**: Translating ML results to healthcare insights
-
-## 🤝 Contributing & Collaboration
-
-This project was developed as part of an applied machine learning course. For questions, suggestions, or collaboration opportunities:
-
-- **Author**: Branton Dawson
-- **Course**: Applied Machine Learning  
-
-## 📄 License & Usage
-
-This project is for educational purposes. The UCI Heart Disease Dataset is publicly available for research and educational use. Please cite appropriately if using this analysis as a reference.
-
----
-
-## 🛠️ Development Workflow
+Add commands to run additional scripts as you work through the course (update the path and file name as needed).
 
 ---
 
@@ -257,3 +200,134 @@ With a working version safe in GitHub, start making changes to the code.
 Before starting a new session, remember to do a `git pull` and keep your tools updated.
 
 Each time forward progress is made, remember to git add-commit-push.
+
+---
+
+### Project Overview
+
+This notebook demonstrates comprehensive regression modeling techniques by predicting Titanic passenger fares using multiple algorithms and feature combinations. The project systematically compares Linear Regression, Polynomial Regression, Ridge Regression, and Elastic Net models to understand continuous target prediction challenges.
+
+#### Objective: Multi-Model Regression Analysis
+
+- **Dataset**: Titanic passenger data (891 passengers after cleaning)
+- **Target Variable**: `fare` (continuous - amount paid for journey)
+- **Algorithms**: Linear Regression, Polynomial Regression (degrees 3 & 6), Ridge Regression, Elastic Net
+- **Feature Cases**: Four different feature combinations tested across all models
+- **Goal**: Determine optimal model-feature combinations for fare prediction and understand regression complexity trade-offs
+
+#### Feature Engineering & Selection
+
+#### Case 1: Single Demographic Feature
+
+- **Features**: `age` (continuous numerical)
+- **Rationale**: Test if passenger age correlates with fare (premium accommodations for older passengers)
+- **Challenge**: Age alone shows weak correlation with fare pricing
+
+#### Case 2: Social Context Feature
+
+- **Features**: `family_size` (engineered: sibsp + parch + 1)
+- **Rationale**: Family groups might pay different rates or get group discounts
+- **Challenge**: Individual booking decisions override family size patterns
+
+#### Case 3: Combined Demographic Features
+
+- **Features**: `age` + `family_size` (multi-dimensional)
+- **Rationale**: Combine life stage and social context for richer prediction
+- **Challenge**: More features don't always improve simple linear relationships
+
+#### Case 4: Socioeconomic Indicators
+
+- **Features**: `sex` + `class` (gender + passenger class)
+- **Rationale**: Direct socioeconomic factors that determined 1912 ticket pricing
+- **Analysis**: Class structure (1st > 2nd > 3rd) and gender-based social patterns
+
+### Performance Summary - Regression Results
+
+| Model Type | Features | R² Score | RMSE | MAE | Performance Notes |
+|------------|----------|----------|------|-----|-------------------|
+| **Linear Regression** | age | ~0.01 | ~49.5 | ~35.2 | Poor - age weakly predicts fare |
+| | family_size | ~0.02 | ~49.3 | ~35.1 | Minimal improvement over age alone |
+| | age + family_size | ~0.03 | ~49.1 | ~34.9 | Slight improvement but still weak |
+| | **sex + class** | **~0.55** | **~33.5** | **~23.8** | 🏆 **Best performance - class drives fare** |
+| **Ridge Regression** | age | ~0.01 | ~49.5 | ~35.2 | No overfitting to regularize |
+| **Elastic Net** | age | ~0.01 | ~49.5 | ~35.2 | Regularization provides no benefit |
+| **Polynomial (degree 3)** | age | ~0.02 | ~49.2 | ~35.0 | Minimal improvement over linear |
+| **Polynomial (degree 6)** | age | ~0.01 | ~49.7 | ~35.4 | ⚠️ **Overfitting - worse than cubic** |
+
+#### 🏆 Performance Rankings
+
+1. **Linear Regression (sex + class)**: R² ~0.55 - Clear winner, captures fare structure
+2. **Polynomial degree 3**: R² ~0.02 - Marginal improvement for age-based models
+3. **All other combinations**: R² <0.03 - Poor performance, weak feature relationships
+
+### Technical Accomplishments
+
+- **Comprehensive Model Comparison**: Implemented 4 different regression algorithms
+- **Regularization Analysis**: Tested Ridge and Elastic Net for overfitting prevention
+- **Polynomial Complexity Study**: Compared degree 3 vs degree 6 polynomial features
+- **Feature Impact Assessment**: Systematic evaluation of demographic vs. socioeconomic features
+- **Overfitting Detection**: Identified when model complexity hurts generalization
+- **Data Preprocessing**: Handled missing values, feature engineering, and categorical encoding
+
+### Key Learning Outcomes & Insights
+
+#### **Critical Discovery: Feature Quality Over Model Complexity**
+
+1. **Direct Predictors Win**: Passenger class directly determines fare structure
+2. **Demographic Limitations**: Age and family size are weak fare predictors  
+3. **Complexity Paradox**: Simple linear models with good features outperform complex models with poor features
+4. **Historical Context Matters**: 1912 social structures (gender + class) drive economic patterns
+
+#### **Algorithm-Specific Insights**
+
+- **Linear Regression**: Sufficient when relationships are fundamentally linear (class-fare relationship)
+- **Regularization (Ridge/Elastic Net)**: No benefit when base model isn't overfitting
+- **Polynomial Models**: Risk overfitting without strong underlying non-linear patterns
+- **Model Selection**: Match algorithm sophistication to data relationship complexity
+
+#### **Regression-Specific Lessons**
+
+1. **R² Interpretation**: Values <0.1 indicate virtually no predictive power
+2. **Feature Engineering Impact**: Right features matter more than sophisticated algorithms  
+3. **Outlier Effects**: Right-skewed fare distribution affects all linear models
+4. **Domain Knowledge**: Understanding historical context crucial for feature selection
+
+### Challenges Faced & Solutions
+
+- **Weak Baseline Features**: Age and family_size showed minimal fare correlation - **Solution**: Identified class as key predictor
+- **Fare Distribution Skew**: Right-skewed target with expensive outliers affecting linear assumptions - **Future work**: Log transformation needed
+- **Polynomial Overfitting**: Degree 6 performed worse than degree 3 - **Learning**: Higher complexity requires more data and stronger relationships
+- **Missing Context**: Limited features available - **Insight**: Real fare prediction would need cabin details, booking date, route information
+
+### Data Challenges Identified
+
+1. **Fare Prediction Difficulty**: Moderately challenging with R² ~0.55 maximum
+   - Individual booking decisions create unpredictable patterns
+   - Missing key information (cabin details, exact routes, booking dates)
+   - Historical pricing inconsistencies from 1912 booking systems
+
+2. **Distribution Issues**:
+
+   - Right-skewed fare distribution (few very expensive luxury tickets)
+   - Outliers from premium suite passengers affect model training
+   - Missing age data creates gaps in demographic analysis
+
+### Future Improvements & Next Steps
+
+**Immediate Enhancements:**
+
+- **Feature Engineering**: Add `pclass` directly, combine `embarked` with `class` for port-specific pricing
+- **Data Preprocessing**: Log-transform fare to reduce skew, handle outliers (>95th percentile) separately
+- **Alternative Targets**: Predict fare categories (Low/Medium/High) instead of exact amounts
+
+**Advanced Techniques:**
+
+- **Feature Selection**: Statistical tests to identify best predictors systematically
+- **Ensemble Methods**: Combine multiple regression approaches for improved robustness
+- **Cross-Validation**: Robust performance estimates across different data splits
+
+**Research Extensions:**
+
+- **Alternative Problems**: Try predicting age instead of fare for comparison
+- **Modern Techniques**: Gradient boosting, neural networks for non-linear patterns
+- **External Validation**: Test approaches on modern transportation pricing datasets
