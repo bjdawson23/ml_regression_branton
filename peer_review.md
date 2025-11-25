@@ -1,4 +1,4 @@
-# Peer Review: Regression Analysis: Predicting Medical Insurance Charges
+# Peer Review: Regression Analysis
 
 - **Project:** Regression Analysis: Predicting Medical Insurance Charges
 - **Author:**  Womenker Karto
