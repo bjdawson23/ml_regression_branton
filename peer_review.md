@@ -1,46 +1,55 @@
 # Peer Review: Heart Disease Classification Analysis
 
-- **Project:** Machine Learning Regression Analysis  
-- **Author:**  Anjana Dhakal
+- **Project:** Regression Analysis: Predicting Medical Insurance Charges
+- **Author:**  Womenker Karto
 - **Reviewer:** Branton Dawson  
 - **Review Date:** November 24, 2025
 
 ---
 
-Notebook link: [Midterm Heart Disease Classification](https://github.com/anjana-codes/ml_classification_anjana/blob/main/notebooks/classification_anjana.ipynb)
+Notebook link: [Regression_Analysis_Project](https://github.com/wkarto/ml_regression_karto/blob/main/regression_karto.ipynb)
+
+## Clarity & Organization
 
 1. The notebook structured and easy to follow.
-2. Feature Selection & Justification: All 13 inputs were chosen as they have a strong correlation with heart disease.
-3. Reflections are well thought out and easy to read.
+2. Histograms were nice to look at and the color by region stood out nicely.
 
-- I chose Anjana's project to review as it covered the same heart disease analysis that I did and found it very interesting.
-- There is a second notebook completed covering HR Employee Attrition.  
-**GREAT WORK ON BOTH!!**
+## Feature Selection
+
+1. Feature Selection & Justification: bmi_smoker multiplying bmi and smoker to capture the combined effect of obesity and smoking.
+   - Engineered interaction feature captures the compounded effect of high BMI and smoking on charges.
+
+## Model Performance & Comparisons
+
+1. Linear Regression with standard preprocessing performed best, achieving an R² of ~0.785 on the test set.
+
+## Reflection Quality
+
+1. Reflections were present for each section and are well thought out and easy to read.
 
 ## 4-point Repository Checklist
 
 Verify the repository contains:
 
-- [x] Jupyter Notebook has proper name, numbered sections and reflections.
-- [x] README.md - the README file is very well organized and informative and has required information and project links
-- [x] Dataset, stored in a data folder.  There is a data folder with the requied data file(s)
-- [x] Peer Review (peer_review.md) - there is a required peer review file with a completed review.
-
-## 📋 Review Summary
-
-This peer review evaluates the heart disease classification project across multiple dimensions including methodology, code quality, analysis depth, and presentation. The project demonstrates solid machine learning fundamentals with room for enhancement in advanced techniques.
+    1. Clarity & Organization (Is the notebook structured and easy to follow?)
+    2. Feature Selection & Justification (Do the chosen features make sense given the objectives?)
+    3. Model Performance & Comparisons (Are the results and comparisons clearly explained?)
+    4. Reflection Quality (Are insights well thought out?)
 
 **Key Takeaways for Author:**
 
 Positive Feedback
 
+- I chose Karto's project to review as it was the most recent and I found it interesting to see how we each looked at the data.
+
 1. The systematic approach to algorithm comparison is exemplary
 2. Feature engineering shows good domain knowledge
+3. bmi_smoker was a great added feature
 
 Constructive Feedback
 
-1. I would only suggest trying another model for the analysis
+1. There were some imports in sections 4 and 5. Those should be at the top.
 
 ---
 
-**Review Completion Date:** November 11, 2025
+**Review Completion Date:** November 24, 2025
