@@ -1,4 +1,4 @@
-# Peer Review: Heart Disease Classification Analysis
+# Peer Review: Regression Analysis: Predicting Medical Insurance Charges
 
 - **Project:** Regression Analysis: Predicting Medical Insurance Charges
 - **Author:**  Womenker Karto
